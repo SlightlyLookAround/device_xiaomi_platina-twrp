@@ -59,4 +59,4 @@ VENDOR_SECURITY_PATCH := 2020-08-01
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # Inherit the proprietary files
-include vendor/xiaomi/platina/BoardConfigVendor.mk
+# include vendor/xiaomi/platina/BoardConfigVendor.mk
