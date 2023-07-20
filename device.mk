@@ -26,9 +26,6 @@ $(call inherit-product, device/xiaomi/sdm660-common/sdm660.mk)
 
 DEVICE_PATH := device/xiaomi/platina
 
-# Setup dalvik vm configs
-$(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
-
 # Inherit properties.mk
 $(call inherit-product, $(DEVICE_PATH)/properties.mk)
 
@@ -57,11 +54,6 @@ PRODUCT_COPY_FILES += \
 # FM
 BOARD_HAVE_QCOM_FM := false
 
-# Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(DEVICE_PATH)/overlay \
-    $(DEVICE_PATH)/overlay-lineage
-
 PRODUCT_PACKAGES += \
     NoCutoutOverlay
 
@@ -84,4 +76,4 @@ PRODUCT_PACKAGES += \
     PlatinaWifiOverlay
 
 # Inherit proprietary files
-$(call inherit-product, vendor/xiaomi/platina/platina-vendor.mk)
+# $(call inherit-product, vendor/xiaomi/platina/platina-vendor.mk)
