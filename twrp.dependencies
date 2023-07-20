@@ -1,6 +1,7 @@
 [
   {
-    "repository": "https://github.com/PixelExperience-Devices/kernel_xiaomi_sdm660",
+    "remote": "github",
+    "repository": "PixelExperience-Devices/kernel_xiaomi_sdm660",
     "target_path": "kernel/xiaomi/sdm660"
   }
 ]
